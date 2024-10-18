@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Drawing Tool</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    #canvas {
+      border: 2px solid black;
+      margin-top: 10px;
+      touch-action: none;
+    }
+    #controls {
+      margin: 20px 0;
+    }
+    #shareBtn {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upload and Draw Red Lines</h1>
+  <input type="file" id="upload" accept="image/*" />
+  <br><br>
+  <canvas id="canvas"></canvas>
+  <br><br>
+  <div id="controls">
+    <button id="saveBtn">Save Image</button>
+    <button id="shareBtn">Share Image</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
